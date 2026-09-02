@@ -39,11 +39,7 @@ describe("importCSVMapper", () => {
   });
 
   it("should handle mapData with index and array", () => {
-    const data = [
-      ["name"],
-      ["first"],
-      ["second"],
-    ];
+    const data = [["name"], ["first"], ["second"]];
     const indices: number[] = [];
     importCSVMapper(data, (item: any, index: number) => {
       indices.push(index);
